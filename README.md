@@ -6,9 +6,6 @@
 **Curso:** Engenharia de Software  
 **Instituição:** FIAP  
 **Ano:** 2026
-
-**Repositório:** https://github.com/AliAndrea1/GS-CitizenTech-SOA
-
 ---
 
 ## 1. Sobre o projeto
