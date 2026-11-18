@@ -1,13 +1,4 @@
 # Oasis — SOA & Web Services
-
-**Global Solution 2026 — FIAP | CitizenTech**
-
-**Disciplina:** Arquitetura Orientada a Serviços (SOA) e Web Services  
-**Curso:** Engenharia de Software  
-**Instituição:** FIAP  
-**Ano:** 2026
----
-
 ## 1. Sobre o projeto
 
 O **Oasis** é uma solução CitizenTech desenvolvida para a Global Solution 2026 da FIAP, com foco na proteção da população diante de eventos de calor extremo e na promoção de cidades mais resilientes.
