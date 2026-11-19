@@ -17,6 +17,10 @@ public class WeatherReading
     [Range(-90, 60)]
     public double TemperatureC { get; set; }
 
+    // Sensação térmica estimada pela Open-Meteo
+    [Range(-100, 100)]
+    public double? ApparentTemperatureC { get; set; }
+
     [Range(0, 100)]
     public int RelativeHumidity { get; set; }
 
