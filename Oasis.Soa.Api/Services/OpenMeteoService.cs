@@ -26,7 +26,7 @@ public class OpenMeteoService
             $"https://api.open-meteo.com/v1/forecast" +
             $"?latitude={lat}" +
             $"&longitude={lon}" +
-            $"&current=temperature_2m,relative_humidity_2m,precipitation" +
+            $"&current=temperature_2m,relative_humidity_2m,precipitation,apparent_temperature" +
             $"&timezone=America%2FSao_Paulo";
 
         using var response = await _httpClient.GetAsync(
@@ -49,6 +49,10 @@ public class OpenMeteoService
 
         double temperature = current
             .GetProperty("temperature_2m")
+            .GetDouble();
+
+        double apparentTemperature = current
+            .GetProperty("apparent_temperature")
             .GetDouble();
 
         int humidity = current
@@ -78,6 +82,7 @@ public class OpenMeteoService
             Latitude = latitude,
             Longitude = longitude,
             TemperatureC = temperature,
+            ApparentTemperatureC = apparentTemperature,
             RelativeHumidity = humidity,
             PrecipitationMm = precipitation,
             Source = "Open-Meteo",
